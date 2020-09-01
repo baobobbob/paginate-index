@@ -1,6 +1,14 @@
 {
   "version": "0.1.0",
   "license": "MIT",
+  "description": "Create a paging index number",
+  "bugs": "https://github.com/baobobbob/paginate-index/issues",
+  "tags": [
+    "paginate"
+  ],
+  "repository": {
+    "url": "https://github.com/baobobbob/paginate-index.git"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -30,7 +38,7 @@
     "trailingComma": "es5"
   },
   "name": "paginate-index",
-  "author": "BaoHaoYu",
+  "author": "baobobbob",
   "module": "dist/paginate-index.esm.js",
   "devDependencies": {
     "@types/lodash": "^4.14.157",
