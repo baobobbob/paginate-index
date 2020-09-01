@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - stable
+cache: yarn
+script: skip
+
+after_success:
+  - npm run test --coverage
+  - npm run build
+
+deploy:
+  - provider: npm
+    email: baobobbob@outlook.com
+    api_key: $NPM_TOKEN
+    skip_cleanup: true
+    on:
+      branch: release
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
